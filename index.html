@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="uk" data-bs-theme="dark" data-bs-spy="scroll" data-bs-target="#navMenu" data-bs-offset="100" tabindex="0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Підключаємо bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>КІ-401 Онисько Лаб6</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Навбар -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Львів Візитка</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Перемикати навігацію">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#rynok">Площа Ринок</a></li>
+                <li class="nav-item"><a class="nav-link" href="#opera">Оперний театр</a></li>
+                <li class="nav-item"><a class="nav-link" href="#high-castle">Високий Замок</a></li>
+                <li class="nav-item"><a class="nav-link" href="#st-george">Собор Св. Юра</a></li>
+                <li class="nav-item"><a class="nav-link" href="#armenian">Вірменський собор</a></li>
+                <li class="nav-item"><a class="nav-link" href="#accordionSection">Історичні факти</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contactForm">Зворотній зв'язок</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero d-flex align-items-center text-center text-white">
+    <div class="hero-overlay rounded animate__animated animate__fadeInUp">
+        <h1 class="display-4">Львів - культурна столиця України</h1>
+        <p class="lead">Відвідайте визначні місця, дізнайтесь історію та відчуйте унікальну атмосферу міста Лева.</p>
+        <a href="#rynok" class="btn btn-primary btn-lg mt-4">Почати подорож</a>
+    </div>
+</div>
+
+<!-- Карусель -->
+<div id="lvivCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#lvivCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+      <button type="button" data-bs-target="#lvivCarousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+      <button type="button" data-bs-target="#lvivCarousel" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+  </div>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="https://visitlviv.net/wp-content/uploads/2022/09/lviv-ploshha-rynok-1.webp" class="d-block w-100" alt="Площа Ринок">
+          <div class="carousel-caption">
+              <h5 style="color: #fff;">Площа Ринок</h5>
+              <p style="color: #fff;"> Історичне серце Львова</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://www.tsina.lviv.ua/wp-content/uploads/2016/12/opernij.jpg.webp" class="d-block w-100" alt="Львівський Оперний Театр">
+          <div class="carousel-caption">
+              <h5 style="color: #fff;">Оперний театр</h5>
+              <p style="color: #fff;">Архітектурна перлина міста</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://vidviday.ua/storage/media/place/16097/visokii-zamok-2.jpeg" class="d-block w-100" alt="Високий Замок">
+          <div class="carousel-caption">
+              <h5 style="color: #fff;">Високий Замок</h5>
+              <p style="color: #fff;">Панорамний вид на Львів</p>
+          </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#lvivCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Назад</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#lvivCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Вперед</span>
+  </button>
+</div>
+
+<div class="container py-5">
+    <!-- Площа Ринок -->
+    <div class="row g-4" id="rynok">
+        <div class="col-md-6 animate-on-scroll">
+            <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                <!-- Змінено зображення Площі Ринок -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2DDQiHiRhmSd7fF5M6YuJ-U0tmewn9vt6w&s" class="card-img-top" alt="Площа Ринок" data-bs-toggle="tooltip" title="Площа Ринок - серце Львова!">
+                <div class="card-body">
+                    <h5 class="card-title">Площа Ринок</h5>
+                    <p class="card-text">Історичне серце Львова, оточене величними будинками та ратушею. Заснована в XIV ст., вона стала центром торговельного, культурного та політичного життя.</p>
+                    <button class="btn btn-outline-light mt-3 show-map" data-url="https://maps.app.goo.gl/e5yjixWFSgd8KfWh9">Показати на карті</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Оперний театр -->
+        <div class="col-md-6 animate-on-scroll" id="opera">
+            <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                <!-- Змінено зображення Оперний театр -->
+                <img src="https://www.tsina.lviv.ua/wp-content/uploads/2016/12/opernij.jpg.webp" class="card-img-top" alt="Львівський Оперний театр" data-bs-toggle="tooltip" title="Вишукана архітектура Оперного театру">
+                <div class="card-body">
+                    <h5 class="card-title">Львівський Оперний театр</h5>
+                    <p class="card-text">Один із найкрасивіших театрів Європи у стилі неоренесансу та необароко. Відкритий у 1900 році, є місцем для опер, балетів та концертів світового рівня.</p>
+                    <button class="btn btn-outline-light mt-3 show-map" data-url="https://maps.app.goo.gl/ydmYmvLQGqSBs8Pd9">Показати на карті</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Високий Замок, Собор Св. Юра -->
+    <div class="row g-4 mt-4" id="high-castle">
+        <div class="col-md-6 animate-on-scroll">
+            <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                <!-- Змінено зображення Високий Замок -->
+                <img src="https://vidviday.ua/storage/media/place/16097/visokii-zamok-2.jpeg" class="card-img-top" alt="Високий Замок" data-bs-toggle="tooltip" title="Неймовірна панорама міста!">
+                <div class="card-body">
+                    <h5 class="card-title">Високий Замок</h5>
+                    <p class="card-text">Найвища точка Львова, звідки відкривається панорамний вид на місто. Колись тут стояв замок XIII ст., тепер це оглядовий майданчик.</p>
+                    <button class="btn btn-outline-light mt-3 show-map" data-url="https://maps.app.goo.gl/J2VPcGNvEJX11nST6">Показати на карті</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Собор Св. Юра (без змін) -->
+        <div class="col-md-6 animate-on-scroll" id="st-george">
+            <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/StGeorgeCathedral_Lviv.JPG/450px-StGeorgeCathedral_Lviv.JPG" class="card-img-top" alt="Собор Святого Юра" data-bs-toggle="tooltip" title="Духовна перлина Львова">
+                <div class="card-body">
+                    <h5 class="card-title">Собор Святого Юра</h5>
+                    <p class="card-text">Бароковий греко-католицький собор XVIII ст., головний храм УГКЦ. Витончена архітектура та старовинні ікони роблять його важливим духовним центром міста.</p>
+                    <button class="btn btn-outline-light mt-3 show-map" data-url="https://maps.app.goo.gl/Xn2QLsdaxdxrNmhT6">Показати на карті</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Вірменський кафедральний собор (без змін) -->
+    <div class="row g-4 mt-4" id="armenian">
+        <div class="col-md-6 animate-on-scroll">
+            <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                <img src="https://photos.drymba.com/drb/000/128/12812_98d_ht8kuc.jpg" class="card-img-top" alt="Вірменський кафедральний собор" data-bs-toggle="tooltip" title="Історична спадщина різних епох">
+                <div class="card-body">
+                    <h5 class="card-title">Вірменський кафедральний собор</h5>
+                    <p class="card-text">Один із найстаріших храмів Львова XIV ст., що поєднує готику, ренесанс та бароко. Важливий центр вірменської громади.</p>
+                    <button class="btn btn-outline-light mt-3 show-map" data-url="https://maps.app.goo.gl/BH6icfoyv65v7nFw9">Показати на карті</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="mt-5" id="accordionSection">
+        <h2>Історичні факти про Львів</h2>
+        <div class="accordion" id="historyAccordion">
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factOne">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Факт 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Львів був заснований у середині XIII ст. князем Данилом Галицьким та названий на честь його сина Лева.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factTwo">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Факт 2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Упродовж століть Львів знаходився під владою різних держав, що вплинуло на його унікальну архітектуру та культуру.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factThree">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        Факт 3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Львів - місто кавової культури. Вважається, що перші кав'ярні в Україні з'явилися саме тут.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factFour">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        Факт 4
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Історичний центр Львова внесено до списку Всесвітньої спадщини ЮНЕСКО у 1998 році.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factFive">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                        Факт 5
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Львів відомий своєю бруківкою та вузькими вуличками, які зберегли атмосферу середньовічного міста.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factSix">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                        Факт 6
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        У місті діє багато театрів та музеїв, серед яких Львівський національний театр опери та балету імені Соломії Крушельницької та Львівський історичний музей.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factSeven">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                        Факт 7
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Львівське пиво має давню традицію, перша броварня заснована тут ще у XVIII столітті.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factEight">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                        Факт 8
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Львів відомий своїми численними фестивалями: джазовим фестивалем Leopolis Jazz Fest, різдвяними ярмарками та фестивалем кави.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factNine">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                        Факт 9
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        У Львові діє більше десятка університетів та вищих навчальних закладів, що робить його освітнім центром Заходу України.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factTen">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
+                        Факт 10
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Львів часто називають "Містом Лева", а його символом є лев, який можна зустріти в гербі міста та на численних скульптурах.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальне вікно з відео -->
+    <div class="mt-5 text-center">
+        <button class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#videoModal">Переглянути відео про Львів</button>
+    </div>
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Відео про Львів</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрити"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/UbPPNJgFouk?si=rQqEgAlManl_NPiF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Форма зворотнього зв'язку -->
+    <div class="mt-5" id="contactForm">
+        <h2>Зворотній зв'язок</h2>
+        <form class="mt-3">
+            <div class="mb-3">
+                <label for="name" class="form-label">Ваше ім'я</label>
+                <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Ваш Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Ваше повідомлення</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Напишіть ваше повідомлення..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Надіслати</button>
+        </form>
+    </div>
+</div>
+
+<footer class="footer text-center text-white">
+    <div class="container">
+        <p class="mb-0">© 2024 Львів Візитка. Всі права захищено.</p>
+        <small>Створено з любов'ю до міста Лева.</small>
+    </div>
+</footer>
+
+<!-- Toast -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="mapToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">Локація відкриється в новій вкладці.</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрити"></button>
+        </div>
+    </div>
+</div>
+
+<!-- Підключення Bootstrap JS (bundle включає Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Анімації при скролі
+    document.addEventListener('scroll', function() {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        const triggerBottom = window.innerHeight * 0.9; 
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if(rect.top < triggerBottom) {
+                el.classList.add('animate-in', 'animate__animated', 'animate__fadeInUp');
+            }
+        });
+    });
+
+    // Ініціалізація тултіпів
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Ініціалізація тосту
+    const mapToastEl = document.getElementById('mapToast');
+    const mapToast = new bootstrap.Toast(mapToastEl);
+    const showMapButtons = document.querySelectorAll('.show-map');
+
+    showMapButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            window.open(btn.getAttribute('data-url'), '_blank');
+            mapToast.show();
+        });
+    });
+});
+</script>
+
+</body>
+</html>

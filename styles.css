@@ -1,0 +1,70 @@
+body {
+    background-color: #1c1c1c;
+    color: #f8f9fa;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+
+.hero {
+    background: url('https://varta1.com.ua/uploads/media/images/image/9d/8d/9d8d20ce31a842f58aa6651d6cc4e795n5qobfltetxhygz_image.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.hero-overlay {
+    background-color: rgba(0,0,0,0.4);
+    padding: 60px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+}
+
+.animate-on-scroll.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: #111;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0; top: 0;
+    /* Градієнт від чорного внизу до прозорого посередині */
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2; /* Текст над градієнтом */
+    color: #fff; /* Білий текст */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.7); /* тінь для кращої читабельності */
+}
